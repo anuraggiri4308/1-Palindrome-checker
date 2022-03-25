@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.6;
+  height: 100vh;
+  overscroll-behavior-y: none;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  /* padding: 2.5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: #fafafa;
+  width: 60rem;
+  padding: 2rem 4rem;
+  border-radius: 10px;
+}
+.heading {
+  font-size: 3.6rem;
+}
+.description {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 2.8rem;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.text-input {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2.4rem;
+  letter-spacing: 1.9px;
+  border: none;
+  border: 1px solid #888;
+  border-radius: 6px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.text-input::placeholder {
+  color: #999;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.text-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem rgb(0, 135, 147, 0.9);
+}
+.btn {
+  padding: 1.5rem 6rem;
+  pointer-events: none;
+  color: #fff;
+  background-color: #008793;
+  border: none;
+  font-size: 2rem;
+  border-radius: 100px;
+  width: fit-content;
+  transition: 0.3s all;
+  opacity: 0.7;
+}
+.active {
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.btn:hover {
+  box-shadow: 0rem 0.5rem 2rem rgba(0, 135, 147, 0.6);
+  transform: translateY(-2px);
+}
+
+.message {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: center;
+  display: none;
+}
+.user-input {
+  color: #008793;
+  font-weight: 600;
+}
+.success {
+  color: rgb(0, 100, 0);
+}
+.error {
+  color: rgb(182, 7, 7);
+}
+.icon {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  padding: 1rem;
+  background-color: #0077b5;
+  border-radius: 10px;
+}
+/* media queries */
+@media (max-width: 51em) {
+  .container {
+    width: 50rem;
+  }
+}
+@media (max-width: 39em) {
+  .container {
+    width: 40rem;
+  }
+  .heading {
+    font-size: 2.6rem;
+  }
+
+  .message {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 33em) {
+  .container {
+    width: 35rem;
+  }
+  .description {
+    font-size: 1.6rem;
+  }
+}
