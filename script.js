@@ -11,12 +11,12 @@ btn.addEventListener("click", () => {
 
     msg.style.display = "block";
     msg.textContent = `${filterInput} is not a Palindrome`;
-    return (msg.innerHTML = `Your input <span class="user-input">"${input.value}"</span> is not a Palindrome number.`);
+    return (msg.innerHTML = `Your input <span class="user-input">"${input.value}"</span> is not a Palindrome 😑.`);
   }
   msg.style.display = "block";
   msg.classList.remove("error");
   msg.classList.add("success");
-  return (msg.innerHTML = `Your input <span class="user-input">"${input.value}"</span> is a Palindrome number.`);
+  return (msg.innerHTML = `Your input <span class="user-input">"${input.value}"</span> is a Palindrome 😊.`);
 });
 
 input.addEventListener("keyup", () => {
